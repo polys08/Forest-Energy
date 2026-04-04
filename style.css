@@ -19,6 +19,9 @@ body {
     height: 70px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header.scrolled {
@@ -31,15 +34,16 @@ body {
 }
 
 .btn-img {
-    width: 300px;
+    width: 320px;
     cursor: pointer;
     transition: 0.3s;
     margin-top: 50px;
+    height: auto;
+
 }
 
 .hero {
     position: relative;
-    margin-top: 70px;
     min-height: 100vh;
 }
 
@@ -54,7 +58,7 @@ body {
     align-items: center;
 }
 
-.hero img {
+.hero > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
