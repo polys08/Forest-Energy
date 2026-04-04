@@ -40,20 +40,23 @@ body {
 .hero {
     position: relative;
     margin-top: 70px;
+    min-height: 100vh;
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -64,14 +67,13 @@ body {
 
 }
 
-main img{
-        width: 100%;
-        display: block;
-    }
-
 section {
     padding: 60px 20px;
     background-color: rgb(182, 180, 97);
+}
+
+.nav {
+    flex: 1;
 }
 
 .nav-list {
@@ -79,6 +81,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
     flex: 1;
 }
 
@@ -93,10 +96,6 @@ section {
     color: rgb(255, 145, 0);
 }
 
-.nav {
-    flex: 1;
-}
-
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
@@ -106,10 +105,30 @@ section {
     }
 
     .btn-img {
-        width: 150px;
-        height: auto;
+    width: 150px; 
+    height: auto;
     }
 
+    .hero {
+        position: relative;
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+    }
+
+    .hero-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     .hero-text h1 {
         font-size: 1.8rem;
     }
@@ -119,11 +138,14 @@ section {
     }
 
     section {
-        padding: 40px 15px;
+        padding: 80px 20px;
     }
 
     .nav-list {
         width: 100%;
         align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
     }
 }
