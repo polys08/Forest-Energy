@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(182, 180, 97);
 
 }
 
@@ -102,21 +102,23 @@ section {
 
 @media (max-width: 600px) {
     .header {
-        flex-direction: column;
-        height: auto;
+        flex-direction: row;
+        height: 70px;
         padding: 10px;
         text-align: center;
+        justify-content: space-between;
     }
 
     .btn-img {
-    width: 150px; 
+    width: 120px; 
     height: auto;
     }
 
     .hero {
         position: relative;
-        margin-top: 70px;
-        min-height: calc(100vh - 70px);
+        margin-top: 0;
+
+        height: 100vh;
     }
 
     .hero-text {
@@ -128,9 +130,9 @@ section {
         align-items: center;
     }
 
-    .hero img {
+    .hero > img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
     .hero-text h1 {
@@ -149,6 +151,7 @@ section {
         width: 100%;
         align-items: center;
         flex-direction: column;
+        font-size: 0.8rem;
         gap: 10px;
         margin-top: 10px;
     }
