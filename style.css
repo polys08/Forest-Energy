@@ -191,4 +191,26 @@ section {
         gap: 10px;
         margin-top: 10px;
     }
+
+    .hamburger{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        z-index: 1100;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: block;
+    }
 }
