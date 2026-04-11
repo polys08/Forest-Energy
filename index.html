@@ -6,55 +6,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="iconCharmander.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <div class="logo">MinhaLogo</div>
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="nav-list">
-                <li><a href="#">INFORMAÇÕES DO JOGO</a></li>
-                <li><a href="#">HISTÓRIA</a></li>
-                <li><a href="#">INSPIRAÇÕES</a></li>
-                <li><a href="#">LINKS</a></li>
+                <li><a href="#historia">HISTÓRIA</a></li>
+                <li><a href="#infos">INFORMAÇÕES DO JOGO</a></li>
+                <li><a href="#personagens">PERSONAGENS</a></li>
+                <li><a href="#persona">PERSONA</a></li>
             </ul>
         </nav>
+
+        <!-- Botão Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <div class="hero">
-        <img src="img/fundofloresta.jpg" alt="Floresta">
+        <img src="fundoflorestajogo.jpg" alt="Floresta">
         <div class="hero-text">
-            <h1></h1>
-            <p></p>
-
             <a href="https://######" target="_blank">
-                <img src="img/jogar.png" alt="Jogar" class="btn-img">
+                <img src="jogar.png" alt="Jogar" class="btn-img">
             </a>
         </div>
     </div>
 
-      <!-- Botão Hamburger -->
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
     <main>
-        <section>
-            <h1>INFORMAÇÕES DO JOGO</h1>
-            <p>
-                Este jogo fala sobre recuperar a energia da floresta...
-            </p>
+        <section id="historia">
+            <div class="container">
+                <h1>HISTÓRIA</h1>
+                <p>
+                    Uma floresta está perdendo sua energia vital e corre o risco de desaparecer. A chama que mantém a
+                    vida no local está se apagando, colocando tudo em perigo.
+
+                    Charmander, com seu fogo especial, embarca em uma missão para restaurar esse equilíbrio. Ao longo da
+                    jornada, ele precisa recuperar chamas espalhadas pelo caminho e superar diversos desafios.
+
+                    No final, ao reunir toda a energia necessária, Charmander consegue reacender a vida da floresta e
+                    trazer de volta sua harmonia.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h1>HISTÓRIA</h1>
-            <p>
-                O personagem precisa restaurar o equilíbrio da natureza...
-            </p>
+        <section id="infos">
+            <div class="container">
+                <h1>INFORMAÇÕES DO JOGO</h1>
+                <p>
+                    <span class="pixel">OBJETIVO:</span> Restaurar a energia da floresta coletando chamas.
+                </p>
+
+                <p>
+                    <span class="pixel">DESAFIOS:</span> Desviar de obstáculos e eliminar os inimigos.
+                </p>
+
+                <p>
+                    <span class="pixel">FINAL:</span> Coletar as chamas para chegar ao final e reacender a vida da
+                    floresta.
+                </p>
+            </div>
         </section>
+
+        <section id="personagens">
+            <div class="container">
+                <h1>PERSONAGENS</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="iconCharmander.png" alt="Charmander">
+                        <h3>Charmander</h3>
+                        <p>O protagonista que precisa restaurar a energia da floresta.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="iconBeedrill.png" alt="Beedrill">
+                        <h3>Beedrill</h3>
+                        <p>Um inimigo que torna a jornada mais desafiadora.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="iconBlastoide.png" alt="Blastoide">
+                        <h3>Blastoide</h3>
+                        <p>Um inimigo que torna a jornada mais desafiadora.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
